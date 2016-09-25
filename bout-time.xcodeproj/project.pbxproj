@@ -14,6 +14,7 @@
 		737EC7F11D96DC9C003EE6A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 737EC7EF1D96DC9C003EE6A4 /* LaunchScreen.storyboard */; };
 		737EC7FC1D96DC9C003EE6A4 /* bout_timeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737EC7FB1D96DC9C003EE6A4 /* bout_timeTests.swift */; };
 		737EC8071D96DC9C003EE6A4 /* bout_timeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737EC8061D96DC9C003EE6A4 /* bout_timeUITests.swift */; };
+		737EC8151D97554F003EE6A4 /* history-events.plist in Resources */ = {isa = PBXBuildFile; fileRef = 737EC8141D97554F003EE6A4 /* history-events.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		737EC8021D96DC9C003EE6A4 /* bout-timeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "bout-timeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		737EC8061D96DC9C003EE6A4 /* bout_timeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bout_timeUITests.swift; sourceTree = "<group>"; };
 		737EC8081D96DC9C003EE6A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		737EC8141D97554F003EE6A4 /* history-events.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "history-events.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				737EC7ED1D96DC9C003EE6A4 /* Assets.xcassets */,
 				737EC7EF1D96DC9C003EE6A4 /* LaunchScreen.storyboard */,
 				737EC7F21D96DC9C003EE6A4 /* Info.plist */,
+				737EC8141D97554F003EE6A4 /* history-events.plist */,
 			);
 			path = "bout-time";
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 			files = (
 				737EC7F11D96DC9C003EE6A4 /* LaunchScreen.storyboard in Resources */,
 				737EC7EE1D96DC9C003EE6A4 /* Assets.xcassets in Resources */,
+				737EC8151D97554F003EE6A4 /* history-events.plist in Resources */,
 				737EC7EC1D96DC9C003EE6A4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

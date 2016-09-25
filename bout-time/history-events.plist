@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>description</key>
+		<string>War in Afghanistan started</string>
+		<key>time</key>
+		<string>2001</string>
+		<key>wikiUrl</key>
+		<string>https://en.wikipedia.org/wiki/War_in_Afghanistan_(2001–2014)</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Iraq War stared</string>
+		<key>time</key>
+		<string>2003</string>
+		<key>wikiUrl</key>
+		<string>https://en.wikipedia.org/wiki/Iraq_War</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Vietnam War started</string>
+		<key>time</key>
+		<string>1955</string>
+		<key>wikiUrl</key>
+		<string>https://en.wikipedia.org/wiki/Vietnam_War</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Korean War started</string>
+		<key>time</key>
+		<string>1950</string>
+		<key>wikiUrl</key>
+		<string>https://en.wikipedia.org/wiki/Korean_War</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>World War II started</string>
+		<key>time</key>
+		<string>1939</string>
+		<key>wikiUrl</key>
+		<string>https://en.wikipedia.org/wiki/World_War_II</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>World War I started</string>
+		<key>time</key>
+		<string>1914</string>
+		<key>wikiUrl</key>
+		<string>https://en.wikipedia.org/wiki/World_War_I</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>The French Revolution started</string>
+		<key>time</key>
+		<string>1789</string>
+		<key>wikiUrl</key>
+		<string>https://en.wikipedia.org/wiki/French_Revolution</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>American Revolutionary War started</string>
+		<key>time</key>
+		<string>1775</string>
+		<key>wikiUrl</key>
+		<string>https://en.wikipedia.org/wiki/American_Revolutionary_War</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Gulf war started</string>
+		<key>time</key>
+		<string>1990</string>
+		<key>wikiUrl</key>
+		<string>https://en.wikipedia.org/wiki/Gulf_War</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>First Crusade started</string>
+		<key>time</key>
+		<string>1096</string>
+		<key>wikiUrl</key>
+		<string>https://en.wikipedia.org/wiki/First_Crusade</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Mexican Revolution started</string>
+		<key>time</key>
+		<string>1910</string>
+		<key>wikiUrl</key>
+		<string>https://en.wikipedia.org/wiki/Mexican_Revolution</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>President Johnson is impeached by the House of Representatives</string>
+		<key>time</key>
+		<string>1868</string>
+		<key>wikiUrl</key>
+		<string>https://en.wikipedia.org/wiki/Andrew_Johnson</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Barack Obama was first inaugurated as president of U.S.</string>
+		<key>time</key>
+		<string>2009</string>
+		<key>wikiUrl</key>
+		<string>https://en.wikipedia.org/wiki/Barack_Obama</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>George W. Bush was first inaugurated as president of U.S.</string>
+		<key>time</key>
+		<string>2001</string>
+		<key>wikiUrl</key>
+		<string>https://en.wikipedia.org/wiki/George_W._Bush</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Bill Clinton was first inaugurated as president of U.S.</string>
+		<key>time</key>
+		<string>1993</string>
+		<key>wikiUrl</key>
+		<string>https://en.wikipedia.org/wiki/Bill_Clinton</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Ronald Reagan was first inaugurated as president of U.S.</string>
+		<key>time</key>
+		<string>1981</string>
+		<key>wikiUrl</key>
+		<string>https://en.wikipedia.org/wiki/Ronald_Reagan</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>John F. Kennedy was first inaugurated as president of U.S.</string>
+		<key>time</key>
+		<string>1961</string>
+		<key>wikiUrl</key>
+		<string>https://en.wikipedia.org/wiki/John_F._Kennedy</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Dwight D. Eisenhower was first inaugurated as president of U.S.</string>
+		<key>time</key>
+		<string>1953</string>
+		<key>wikiUrl</key>
+		<string>https://en.wikipedia.org/wiki/Dwight_D._Eisenhower</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Harry S. Truman was first inaugurated as president of U.S.</string>
+		<key>time</key>
+		<string>1945</string>
+		<key>wikiUrl</key>
+		<string>https://en.wikipedia.org/wiki/Harry_S._Truman</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Franklin D. Roosevelt was first inaugurated as president of U.S.</string>
+		<key>time</key>
+		<string>1933</string>
+		<key>wikiUrl</key>
+		<string>https://en.wikipedia.org/wiki/Franklin_D._Roosevelt</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Movie &quot;Titanic&quot; was released</string>
+		<key>time</key>
+		<string>1997</string>
+		<key>wikiUrl</key>
+		<string>https://en.wikipedia.org/wiki/Titanic_(1997_film)</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Leonardo Dicaprio wins his first oscar for best actor</string>
+		<key>time</key>
+		<string>2016</string>
+		<key>wikiUrl</key>
+		<string>https://en.wikipedia.org/wiki/Leonardo_DiCaprio</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Move &quot;Wolf of Wall Street&quot; was released</string>
+		<key>time</key>
+		<string>2013</string>
+		<key>wikiUrl</key>
+		<string>https://en.wikipedia.org/wiki/The_Wolf_of_Wall_Street_(2013_film)</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Attack on Pearl Harbor</string>
+		<key>time</key>
+		<string>1941</string>
+		<key>wikiUrl</key>
+		<string>https://en.wikipedia.org/wiki/Attack_on_Pearl_Harbor</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>The first modern Olympics were held in Athens, Greece</string>
+		<key>time</key>
+		<string>1896</string>
+		<key>wikiUrl</key>
+		<string>https://en.wikipedia.org/wiki/1896_Summer_Olympics</string>
+	</dict>
+</array>
+</plist>
