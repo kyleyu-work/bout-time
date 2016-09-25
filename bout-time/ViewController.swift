@@ -8,6 +8,13 @@
 
 import UIKit
 
+
+enum MoveDirection {
+  case UP
+  case DOWN
+}
+
+
 class ViewController: UIViewController {
 
   override func viewDidLoad() {
