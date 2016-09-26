@@ -32,11 +32,25 @@ class UserAnswer {
     switch moveDirection {
     case .UP:
       swappedEventIndex = eventIndex - 1
+      assert(swappedEventIndex >= 0, "Cannot move up")
     case .DOWN:
       swappedEventIndex = eventIndex + 1
+      assert(swappedEventIndex < currentEventOrder.count, "Cannot move down")
     }
     
     swapTwoEventOrder(eventIndex1: eventIndex, eventIndex2: swappedEventIndex)
+  }
+  
+  
+  /**
+   * Gets a list of history descriptions of current answer.
+   */
+  func getCurrentAnswerDescriptions() -> [String] {
+    var descList: [String] = []
+    for event in currentEventOrder {
+      descList.append(event.description)
+    }
+    return descList
   }
   
   

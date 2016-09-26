@@ -29,4 +29,10 @@ protocol Trackable {
    * Returns the number of questions for each round.
    */
   func getQuestionNumPerRound() -> Int
+  
+  
+  /**
+   * Reset the tracking stats.
+   */
+  func resetStats()
 }

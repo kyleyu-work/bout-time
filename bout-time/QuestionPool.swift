@@ -9,16 +9,18 @@
 
 class QuestionPool: Trackable {
   let questionsPerRound: Int
+  let timeAllowedPerQuestion: Int
   
   var questionsAsked: Int
   var questionsCorrectlyAnswered: Int
-  var selectedQuestion: Question?
-  var currentUserAnswer: UserAnswer?
-  var askedQuestionSet = Set<Question>()
+  fileprivate var selectedQuestion: Question!
+  fileprivate var currentUserAnswer: UserAnswer!
+  fileprivate var askedQuestionSet = Set<Question>()
   
   
-  init(questionsPerRound: Int) {
+  init(_ questionsPerRound: Int, _ timeAllowedPerQuestion: Int) {
     self.questionsPerRound = questionsPerRound
+    self.timeAllowedPerQuestion = timeAllowedPerQuestion
     self.questionsAsked = 0
     self.questionsCorrectlyAnswered = 0
   }
@@ -48,6 +50,15 @@ class QuestionPool: Trackable {
   }
   
   
+  /**
+   * Reset the tracking stats.
+   */
+  func resetStats() {
+    questionsAsked = 0
+    questionsCorrectlyAnswered = 0
+  }
+  
+  
   func getNextQuestion() -> Question {
     var newQuestion: Question
     repeat {
@@ -55,7 +66,7 @@ class QuestionPool: Trackable {
     } while askedQuestionSet.contains(newQuestion)
     askedQuestionSet.insert(newQuestion)
     selectedQuestion = newQuestion
-    currentUserAnswer = UserAnswer(newQuestion.getQuestionInitialOrder())
+    currentUserAnswer = newQuestion.getDefaultUserAnswer()
     questionsAsked += 1
     
     return newQuestion
@@ -64,7 +75,7 @@ class QuestionPool: Trackable {
   
   func updateAnswer(eventIndex: Int, moveDirection: MoveDirection) {
     assert(currentUserAnswer != nil, "currentUserAnswer is nil")
-    currentUserAnswer?.updateAnswer(
+    currentUserAnswer.updateAnswer(
         eventIndex: eventIndex, moveDirection: moveDirection)
   }
   
@@ -72,6 +83,15 @@ class QuestionPool: Trackable {
   func checkAnswer() -> Bool {
     assert(selectedQuestion != nil && currentUserAnswer != nil,
         "selectedQuestion or currentUserAnswer is nil")
-    return selectedQuestion!.checkAnswer(currentUserAnswer!)
+    let isAnswerCorrect = selectedQuestion.checkAnswer(currentUserAnswer)
+    if isAnswerCorrect {
+      questionsCorrectlyAnswered += 1
+    }
+    return isAnswerCorrect
+  }
+  
+  
+  func getUserAnswerEventDescriptions() -> [String] {
+    return currentUserAnswer.getCurrentAnswerDescriptions()
   }
 }

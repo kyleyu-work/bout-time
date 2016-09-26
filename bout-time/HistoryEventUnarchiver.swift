@@ -20,7 +20,7 @@ enum HistoryEventUnarchiveError: Error {
 
 
 class HistoryEventUnarchiver {
-  class func getHistoryEventsArray() throws -> [HistoryEvent] {
+  class func getHistoryEventsArray() -> [HistoryEvent] {
     let historyEventFileName = "history-events"
     let historyEventFileType = "plist"
     
@@ -70,7 +70,34 @@ class HistoryEventUnarchiver {
     } catch PlistConversionError.ArrayConversionError {
       print("Failed to conver to swift array")
       fatalError()
-    } catch {
+    } catch HistoryEventUnarchiveError.DictionaryConversionError(let data) {
+      print("Cannot convert to [String: String] dictionary: ")
+      print(data)
+      fatalError()
+    } catch HistoryEventUnarchiveError.MissingDescription(let dictData){
+      print("Lack event description:")
+      print(dictData)
+      fatalError()
+    } catch HistoryEventUnarchiveError.MissingTime(let dictData) {
+      print("Lack time information of event:")
+      print(dictData)
+      fatalError()
+    } catch HistoryEventUnarchiveError.InvalidTimeFormat(
+        let dictData, let timeString) {
+      print("Invalid time format: \(timeString)")
+      print(dictData)
+      fatalError()
+    } catch HistoryEventUnarchiveError.MissingWikiUrl(let dictData) {
+      print("Lack the wikipedia url of event:")
+      print(dictData)
+      fatalError()
+    } catch HistoryEventUnarchiveError.InvalidWikiUrl(
+        let dictData, let wikiUrlString) {
+      print("Invalid wikipedia url: \(wikiUrlString)")
+      print(dictData)
+      fatalError()
+    } catch let e {
+      print(e)
       fatalError()
     }
     

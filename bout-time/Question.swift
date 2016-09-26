@@ -10,44 +10,9 @@ import GameplayKit
 
 class Question: Hashable {
   fileprivate static let eventNum: Int = 4
-  fileprivate static var historyEventPool: [HistoryEvent] {
-    var ret: [HistoryEvent]
-    do {
-      ret = try HistoryEventUnarchiver.getHistoryEventsArray()
-      assert(ret.count >= eventNum,
-          "Events per question is more than the total number of events in pool")
-    } catch HistoryEventUnarchiveError.DictionaryConversionError(let data) {
-      print("Cannot convert to [String: String] dictionary: ")
-      print(data)
-      fatalError()
-    } catch HistoryEventUnarchiveError.MissingDescription(let dictData){
-      print("Lack event description:")
-      print(dictData)
-      fatalError()
-    } catch HistoryEventUnarchiveError.MissingTime(let dictData) {
-      print("Lack time information of event:")
-      print(dictData)
-      fatalError()
-    } catch HistoryEventUnarchiveError.InvalidTimeFormat(
-      let dictData, let timeString) {
-        print("Invalid time format: \(timeString)")
-        print(dictData)
-        fatalError()
-    } catch HistoryEventUnarchiveError.MissingWikiUrl(let dictData) {
-      print("Lack the wikipedia url of event:")
-      print(dictData)
-      fatalError()
-    } catch HistoryEventUnarchiveError.InvalidWikiUrl(
-      let dictData, let wikiUrlString) {
-        print("Invalid wikipedia url: \(wikiUrlString)")
-        print(dictData)
-        fatalError()
-    } catch {
-      fatalError()
-    }
-    
-    return ret
-  }
+  fileprivate static var historyEventPool =
+      HistoryEventUnarchiver.getHistoryEventsArray()
+  
   let hashValue: Int
   
   fileprivate var eventSet = Set<HistoryEvent>()
@@ -100,21 +65,10 @@ class Question: Hashable {
   
   
   /**
-   * Returns an initial order of events when question is displayed.
+   * Returns an initial order of events when question is displayed as a
+   * default user answer.
    */
-   func getQuestionInitialOrder() -> [HistoryEvent] {
-    return eventList
-  }
-  
-  
-  /**
-   * Returns initial event descriptions list.
-   */
-  func getQuestionInitialOrderDesc() -> [String] {
-    var descs: [String] = []
-    for event in eventList {
-      descs.append(event.description)
-    }
-    return descs
+   func getDefaultUserAnswer() -> UserAnswer {
+    return UserAnswer(eventList)
   }
 }

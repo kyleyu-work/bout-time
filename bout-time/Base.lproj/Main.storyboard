@@ -23,25 +23,31 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eId-Wu-Yg4">
                                         <subviews>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sputnic was launched by the USSR" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfL-LM-dYj">
-                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="TBX-za-PT7">
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
-                                                <color key="textColor" red="0.23472231362427146" green="0.40842327579766446" blue="0.6463839461304568" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                                <state key="normal" title="Sputnic was launched by the USSR">
+                                                    <color key="titleColor" red="0.23472231360000001" green="0.40842327579999999" blue="0.64638394610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onEventCardLabelTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gmo-DT-lOu"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="bottomMargin" secondItem="hfL-LM-dYj" secondAttribute="bottom" constant="15" id="Go4-XS-BAS"/>
-                                            <constraint firstItem="hfL-LM-dYj" firstAttribute="top" secondItem="eId-Wu-Yg4" secondAttribute="topMargin" constant="15" id="Tf9-tP-OXp"/>
-                                            <constraint firstItem="hfL-LM-dYj" firstAttribute="leading" secondItem="eId-Wu-Yg4" secondAttribute="leadingMargin" constant="15" id="mZN-hn-XcV"/>
-                                            <constraint firstAttribute="trailingMargin" secondItem="hfL-LM-dYj" secondAttribute="trailing" constant="15" id="zmo-qR-cHG"/>
+                                            <constraint firstItem="TBX-za-PT7" firstAttribute="leading" secondItem="eId-Wu-Yg4" secondAttribute="leadingMargin" constant="15" id="2Qz-Zq-8fu"/>
+                                            <constraint firstItem="TBX-za-PT7" firstAttribute="top" secondItem="eId-Wu-Yg4" secondAttribute="topMargin" constant="15" id="Gmo-Rw-zYJ"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="TBX-za-PT7" secondAttribute="bottom" constant="15" id="Ihz-CD-aS9"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="TBX-za-PT7" secondAttribute="trailing" constant="15" id="uCf-1Z-Mj8"/>
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="tcZ-hZ-WKK">
                                         <subviews>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sFH-NE-JOG">
                                                 <state key="normal" image="down_full"/>
+                                                <connections>
+                                                    <action selector="onDownButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hcC-bK-6du"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -58,27 +64,37 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OEl-3K-pOL">
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Roger Maris broke the Babe's HR record" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NwQ-xd-sdY">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="V6E-xl-80G">
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
-                                                <color key="textColor" red="0.23472231360000001" green="0.40842327579999999" blue="0.64638394610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                                <state key="normal" title="Roger Maris broke the Babe's HR record">
+                                                    <color key="titleColor" red="0.23472231360000001" green="0.40842327579999999" blue="0.64638394610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onEventCardLabelTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gD7-Cl-tR2"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstItem="NwQ-xd-sdY" firstAttribute="leading" secondItem="OEl-3K-pOL" secondAttribute="leadingMargin" constant="15" id="5p7-PH-g7K"/>
-                                            <constraint firstAttribute="trailingMargin" secondItem="NwQ-xd-sdY" secondAttribute="trailing" constant="15" id="FFN-1J-E85"/>
-                                            <constraint firstAttribute="bottomMargin" secondItem="NwQ-xd-sdY" secondAttribute="bottom" constant="15" id="JVq-JS-tZ2"/>
-                                            <constraint firstItem="NwQ-xd-sdY" firstAttribute="top" secondItem="OEl-3K-pOL" secondAttribute="topMargin" constant="15" id="ndc-lg-gTo"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="V6E-xl-80G" secondAttribute="trailing" constant="15" id="6ZV-WY-U9g"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="V6E-xl-80G" secondAttribute="bottom" constant="15" id="Myd-Ev-rgw"/>
+                                            <constraint firstItem="V6E-xl-80G" firstAttribute="top" secondItem="OEl-3K-pOL" secondAttribute="topMargin" constant="15" id="UUp-Xk-JNJ"/>
+                                            <constraint firstItem="V6E-xl-80G" firstAttribute="leading" secondItem="OEl-3K-pOL" secondAttribute="leadingMargin" constant="15" id="kyL-C4-bzO"/>
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ZD9-Mg-M8K">
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zuU-4Y-d50">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zuU-4Y-d50">
                                                 <state key="normal" image="up_half"/>
+                                                <connections>
+                                                    <action selector="onUpButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="35x-KF-PPs"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Abn-I8-D2T">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Abn-I8-D2T">
                                                 <state key="normal" image="down_half"/>
+                                                <connections>
+                                                    <action selector="onDownButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vI4-RZ-8kN"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -95,27 +111,37 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="29X-Em-KUP">
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start of the Korean war" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lF9-d1-Ur0">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="zcx-5q-18k">
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
-                                                <color key="textColor" red="0.23472231360000001" green="0.40842327579999999" blue="0.64638394610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                                <state key="normal" title="Start of the Korean war">
+                                                    <color key="titleColor" red="0.23472231360000001" green="0.40842327579999999" blue="0.64638394610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onEventCardLabelTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NGX-rX-kDx"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstItem="lF9-d1-Ur0" firstAttribute="top" secondItem="29X-Em-KUP" secondAttribute="topMargin" constant="15" id="6cU-KN-7eb"/>
-                                            <constraint firstAttribute="bottomMargin" secondItem="lF9-d1-Ur0" secondAttribute="bottom" constant="15" id="N5H-bD-OAq"/>
-                                            <constraint firstAttribute="trailingMargin" secondItem="lF9-d1-Ur0" secondAttribute="trailing" constant="15" id="qal-mj-eEY"/>
-                                            <constraint firstItem="lF9-d1-Ur0" firstAttribute="leading" secondItem="29X-Em-KUP" secondAttribute="leadingMargin" constant="15" id="vbb-1e-Nsw"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="zcx-5q-18k" secondAttribute="bottom" constant="15" id="FDc-uO-d34"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="zcx-5q-18k" secondAttribute="trailing" constant="15" id="PuB-9q-vaM"/>
+                                            <constraint firstItem="zcx-5q-18k" firstAttribute="leading" secondItem="29X-Em-KUP" secondAttribute="leadingMargin" constant="15" id="QE8-tI-Sfe"/>
+                                            <constraint firstItem="zcx-5q-18k" firstAttribute="top" secondItem="29X-Em-KUP" secondAttribute="topMargin" constant="15" id="dei-qa-8rL"/>
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="IQr-X9-aPQ">
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfN-oo-bRr">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfN-oo-bRr">
                                                 <state key="normal" image="up_half"/>
+                                                <connections>
+                                                    <action selector="onUpButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uiv-Y5-R0Y"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cS2-is-sQX">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cS2-is-sQX">
                                                 <state key="normal" image="down_half"/>
+                                                <connections>
+                                                    <action selector="onDownButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UWN-K0-4aw"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -132,24 +158,31 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q4N-Nr-QM6">
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="George McFly first kisses Lorraine" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wzS-MF-NpX">
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="U9L-vL-Z6z">
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
-                                                <color key="textColor" red="0.23472231360000001" green="0.40842327579999999" blue="0.64638394610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                                <state key="normal" title="George McFly first kisses Lorraine">
+                                                    <color key="titleColor" red="0.23472231360000001" green="0.40842327579999999" blue="0.64638394610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onEventCardLabelTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aj3-hn-dAe"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailingMargin" secondItem="wzS-MF-NpX" secondAttribute="trailing" constant="15" id="CBf-Jc-Luv"/>
-                                            <constraint firstAttribute="bottomMargin" secondItem="wzS-MF-NpX" secondAttribute="bottom" constant="15" id="qpN-tL-VOS"/>
-                                            <constraint firstItem="wzS-MF-NpX" firstAttribute="top" secondItem="Q4N-Nr-QM6" secondAttribute="topMargin" constant="15" id="qw3-B4-Ecw"/>
-                                            <constraint firstItem="wzS-MF-NpX" firstAttribute="leading" secondItem="Q4N-Nr-QM6" secondAttribute="leadingMargin" constant="15" id="rHg-Fj-ZYF"/>
+                                            <constraint firstItem="U9L-vL-Z6z" firstAttribute="leading" secondItem="Q4N-Nr-QM6" secondAttribute="leadingMargin" constant="15" id="Aha-Ex-cZP"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="U9L-vL-Z6z" secondAttribute="bottom" constant="15" id="CTc-0l-CdT"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="U9L-vL-Z6z" secondAttribute="trailing" constant="15" id="Emc-dx-OgL"/>
+                                            <constraint firstItem="U9L-vL-Z6z" firstAttribute="top" secondItem="Q4N-Nr-QM6" secondAttribute="topMargin" constant="15" id="c7f-bd-XXV"/>
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="0fC-Zr-x3s">
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkA-kA-xIb">
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkA-kA-xIb">
                                                 <state key="normal" image="up_full"/>
+                                                <connections>
+                                                    <action selector="onUpButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mac-FU-ZXQ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -162,27 +195,33 @@
                                     <constraint firstAttribute="height" constant="120" id="0KW-VL-zVY"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8Ql-yW-YyZ">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8Ql-yW-YyZ">
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:35" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OiW-pb-qiH">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="55" id="giU-qH-aL9"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="48"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XiZ-Nc-qzx">
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="55" id="Wmb-dt-dYC"/>
+                                            <constraint firstAttribute="height" priority="999" constant="55" id="Wmb-dt-dYC"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="next_round_success"/>
+                                        <connections>
+                                            <action selector="onNextRoundButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bky-2R-aBC"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVh-z4-CiP">
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="55" id="evi-Qq-GKg"/>
+                                            <constraint firstAttribute="height" priority="999" constant="55" id="evi-Qq-GKg"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="next_round_fail"/>
+                                        <connections>
+                                            <action selector="onNextRoundButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K9d-k1-xJ7"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap events to learn more" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qLB-io-BZj">
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -210,21 +249,37 @@
                             <constraint firstItem="zGa-t3-l8P" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="MtU-2G-Qam"/>
                             <constraint firstItem="lgT-HI-f9x" firstAttribute="top" secondItem="aae-4x-fOG" secondAttribute="bottom" constant="15" id="Qch-wc-RU8"/>
                             <constraint firstItem="zGa-t3-l8P" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="UzR-hY-b4X"/>
-                            <constraint firstItem="8Ql-yW-YyZ" firstAttribute="top" secondItem="lgT-HI-f9x" secondAttribute="bottom" constant="20" id="lT7-HX-C14"/>
+                            <constraint firstItem="8Ql-yW-YyZ" firstAttribute="top" secondItem="lgT-HI-f9x" secondAttribute="bottom" constant="30" id="lT7-HX-C14"/>
                             <constraint firstItem="aae-4x-fOG" firstAttribute="top" secondItem="qgf-pj-jwu" secondAttribute="bottom" constant="15" id="xHF-SP-WO3"/>
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="414" height="830"/>
+                    <connections>
+                        <outlet property="correctAnswerNextRoundButton" destination="XiZ-Nc-qzx" id="Y0W-Lp-Bf4"/>
+                        <outlet property="incorrectAnswerNextRoundButton" destination="LVh-z4-CiP" id="bs1-0v-IK1"/>
+                        <outlet property="instructionLabel" destination="qLB-io-BZj" id="Op6-8k-3zq"/>
+                        <outlet property="timerLabel" destination="OiW-pb-qiH" id="e6p-Bu-krM"/>
+                        <outletCollection property="moveDownButtons" destination="sFH-NE-JOG" collectionClass="NSMutableArray" id="tTm-RC-kKk"/>
+                        <outletCollection property="moveDownButtons" destination="Abn-I8-D2T" collectionClass="NSMutableArray" id="R5J-kZ-tCK"/>
+                        <outletCollection property="moveDownButtons" destination="cS2-is-sQX" collectionClass="NSMutableArray" id="Xys-on-Azf"/>
+                        <outletCollection property="moveUpButtons" destination="zuU-4Y-d50" collectionClass="NSMutableArray" id="TLb-7x-v6F"/>
+                        <outletCollection property="moveUpButtons" destination="dfN-oo-bRr" collectionClass="NSMutableArray" id="hVf-77-VCv"/>
+                        <outletCollection property="moveUpButtons" destination="fkA-kA-xIb" collectionClass="NSMutableArray" id="wUM-4L-qmO"/>
+                        <outletCollection property="eventDescriptionButtons" destination="TBX-za-PT7" collectionClass="NSMutableArray" id="GCv-cI-1ux"/>
+                        <outletCollection property="eventDescriptionButtons" destination="V6E-xl-80G" collectionClass="NSMutableArray" id="tGq-5o-4rK"/>
+                        <outletCollection property="eventDescriptionButtons" destination="zcx-5q-18k" collectionClass="NSMutableArray" id="h6r-EW-Beh"/>
+                        <outletCollection property="eventDescriptionButtons" destination="U9L-vL-Z6z" collectionClass="NSMutableArray" id="y8d-6g-a7c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1235" y="-87"/>
+            <point key="canvasLocation" x="-1239" y="-123"/>
         </scene>
-        <!--View Controller-->
+        <!--Score View Controller-->
         <scene sceneID="Bzl-ZG-gcX">
             <objects>
-                <viewController id="owS-IL-e7h" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="scoreViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="owS-IL-e7h" customClass="ScoreViewController" customModule="bout_time" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Zje-MC-4yk"/>
                         <viewControllerLayoutGuide type="bottom" id="kcd-5t-mvu"/>
@@ -249,6 +304,9 @@
                                     <constraint firstAttribute="width" constant="160" id="Osj-Ft-WFP"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="play_again"/>
+                                <connections>
+                                    <action selector="dissmissView" destination="owS-IL-e7h" eventType="touchUpInside" id="wLR-Fe-Ff1"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.043044405348653655" green="0.15931365165547226" blue="0.3350934956395939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -261,10 +319,13 @@
                             <constraint firstItem="1GZ-hz-U38" firstAttribute="top" secondItem="zn6-kB-aEN" secondAttribute="bottom" constant="60" id="p0x-XX-iJ3"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scoreLabel" destination="zn6-kB-aEN" id="PcK-Xd-HGU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0CI-86-ZpG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-565" y="-126"/>
+            <point key="canvasLocation" x="-524" y="-161"/>
         </scene>
     </scenes>
     <resources>
