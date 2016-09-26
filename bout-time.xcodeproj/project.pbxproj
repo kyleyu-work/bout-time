@@ -24,6 +24,7 @@
 		737EC8231D9869BE003EE6A4 /* QuestionPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737EC8221D9869BE003EE6A4 /* QuestionPool.swift */; };
 		737EC8271D988CA6003EE6A4 /* BoutTimeLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 737EC8261D988CA6003EE6A4 /* BoutTimeLaunchScreen.storyboard */; };
 		737EC82B1D98AF2C003EE6A4 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737EC82A1D98AF2C003EE6A4 /* ScoreViewController.swift */; };
+		737EC82D1D98EF1B003EE6A4 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737EC82C1D98EF1B003EE6A4 /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		737EC8221D9869BE003EE6A4 /* QuestionPool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionPool.swift; sourceTree = "<group>"; };
 		737EC8261D988CA6003EE6A4 /* BoutTimeLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BoutTimeLaunchScreen.storyboard; sourceTree = "<group>"; };
 		737EC82A1D98AF2C003EE6A4 /* ScoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
+		737EC82C1D98EF1B003EE6A4 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 				737EC8221D9869BE003EE6A4 /* QuestionPool.swift */,
 				737EC8261D988CA6003EE6A4 /* BoutTimeLaunchScreen.storyboard */,
 				737EC82A1D98AF2C003EE6A4 /* ScoreViewController.swift */,
+				737EC82C1D98EF1B003EE6A4 /* WebViewController.swift */,
 			);
 			path = "bout-time";
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				737EC8171D9768C4003EE6A4 /* PlistConverter.swift in Sources */,
+				737EC82D1D98EF1B003EE6A4 /* WebViewController.swift in Sources */,
 				737EC7E91D96DC9C003EE6A4 /* ViewController.swift in Sources */,
 				737EC8191D976D72003EE6A4 /* HistoryEventUnarchiver.swift in Sources */,
 				737EC8211D9868E3003EE6A4 /* Trackable.swift in Sources */,

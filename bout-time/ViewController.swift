@@ -16,6 +16,7 @@ enum MoveDirection {
 
 
 class ViewController: UIViewController {
+  fileprivate let storyBoard = UIStoryboard(name: "Main", bundle: nil)
   fileprivate let questionsPerRound = 4
   fileprivate let timeAllowedPerQuestion = 35
   fileprivate var questionPool: QuestionPool!
@@ -57,6 +58,11 @@ class ViewController: UIViewController {
 
   @IBAction func onEventCardLabelTapped(_ sender: UIButton) {
     // TODO: Add model view for wiki page
+    let webViewController = storyBoard.instantiateViewController(
+        withIdentifier: "webViewController") as! WebViewController
+    webViewController.wikiUrl =
+        questionPool.getWikiUrlForEvent(atCurrentUserAnswerIndex: sender.tag)
+    present(webViewController, animated: true, completion: nil)
   }
   
   
@@ -88,6 +94,8 @@ class ViewController: UIViewController {
     correctAnswerNextRoundButton.isHidden = true
     incorrectAnswerNextRoundButton.isHidden = true
     updateInstructionLabel(resultIsShown)
+    updateMoveButtonsStatus(isEnabled: true)
+    updateEventDescriptionButtonsStatus(isEnabled: false)
   }
   
   
@@ -192,6 +200,8 @@ class ViewController: UIViewController {
       incorrectAnswerNextRoundButton.isHidden = false
     }
     updateInstructionLabel(resultIsShown)
+    updateMoveButtonsStatus(isEnabled: false)
+    updateEventDescriptionButtonsStatus(isEnabled: true)
   }
   
   
@@ -221,10 +231,27 @@ class ViewController: UIViewController {
   }
   
   
+  fileprivate func updateEventDescriptionButtonsStatus(isEnabled: Bool) {
+    for eventDescriptionButton in eventDescriptionButtons {
+      eventDescriptionButton.isEnabled = isEnabled
+    }
+  }
+  
+  
+  fileprivate func updateMoveButtonsStatus(isEnabled: Bool) {
+    for moveUpButton in moveUpButtons {
+      moveUpButton.isEnabled = isEnabled
+    }
+    
+    for moveDownButton in moveDownButtons {
+      moveDownButton.isEnabled = isEnabled
+    }
+  }
+  
+  
   fileprivate func displayScores() {
     let correctAnswers = questionPool.getCorrectlyAnsweredQuestionNum()
     let totalQuestions = questionPool.getQuestionNumPerRound()
-    let storyBoard = UIStoryboard(name: "Main", bundle: nil)
     let scoreViewController = storyBoard.instantiateViewController(
         withIdentifier: "scoreViewController") as! ScoreViewController
     scoreViewController.delegate = self

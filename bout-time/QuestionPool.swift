@@ -5,6 +5,7 @@
 //  Created by Yi YU on 9/25/16.
 //  Copyright © 2016 Yi YU. All rights reserved.
 //
+import Foundation
 
 
 class QuestionPool: Trackable {
@@ -93,5 +94,11 @@ class QuestionPool: Trackable {
   
   func getUserAnswerEventDescriptions() -> [String] {
     return currentUserAnswer.getCurrentAnswerDescriptions()
+  }
+  
+  
+  func getWikiUrlForEvent(atCurrentUserAnswerIndex: Int) -> URL {
+    return currentUserAnswer.getCurrentEventOrder()[atCurrentUserAnswerIndex]
+        .wikiUrl
   }
 }

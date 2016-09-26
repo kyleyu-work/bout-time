@@ -3,10 +3,55 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Web View Controller-->
+        <scene sceneID="g8V-Nq-KpL">
+            <objects>
+                <viewController storyboardIdentifier="webViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GYd-J9-NhH" customClass="WebViewController" customModule="bout_time" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="H9f-gv-nQT"/>
+                        <viewControllerLayoutGuide type="bottom" id="wpK-OP-XxH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gDq-af-qQL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKQ-P8-B6c">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="UKQ-P8-B6c" secondAttribute="height" multiplier="15:2" id="CVP-EL-fI2"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="webview_bar"/>
+                                <connections>
+                                    <action selector="dismissWebView" destination="GYd-J9-NhH" eventType="touchUpInside" id="wdM-Wb-HDp"/>
+                                </connections>
+                            </button>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ccV-F5-jel">
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UKQ-P8-B6c" firstAttribute="top" secondItem="gDq-af-qQL" secondAttribute="top" id="Og4-rm-ZjH"/>
+                            <constraint firstItem="UKQ-P8-B6c" firstAttribute="leading" secondItem="gDq-af-qQL" secondAttribute="leading" id="TPX-nI-hNh"/>
+                            <constraint firstItem="ccV-F5-jel" firstAttribute="leading" secondItem="gDq-af-qQL" secondAttribute="leading" id="lvO-kE-len"/>
+                            <constraint firstItem="ccV-F5-jel" firstAttribute="top" secondItem="UKQ-P8-B6c" secondAttribute="bottom" id="pYo-Jg-Fqb"/>
+                            <constraint firstAttribute="trailing" secondItem="UKQ-P8-B6c" secondAttribute="trailing" id="u6x-YI-iCj"/>
+                            <constraint firstAttribute="trailing" secondItem="ccV-F5-jel" secondAttribute="trailing" id="x22-Xs-yhg"/>
+                            <constraint firstItem="wpK-OP-XxH" firstAttribute="top" secondItem="ccV-F5-jel" secondAttribute="bottom" id="yqt-S2-dw5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="ccV-F5-jel" id="tUq-0f-f5L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dX0-W3-YW6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1239.2" y="655.32233883058473"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -336,5 +381,6 @@
         <image name="play_again" width="450" height="142"/>
         <image name="up_full" width="158" height="457"/>
         <image name="up_half" width="158" height="229"/>
+        <image name="webview_bar" width="1333" height="167"/>
     </resources>
 </document>
